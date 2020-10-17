@@ -1,0 +1,21 @@
+.content__technology {
+  padding-left: 104px;
+  padding-right: 200px;
+  padding-bottom: 88px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .content__technology {
+    padding-left: 40px;
+    padding-right: 71px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__technology {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+  }
+}

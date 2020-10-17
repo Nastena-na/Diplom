@@ -1,0 +1,18 @@
+.header.header_black {
+  border-bottom: 1px solid#b6bcbf;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header.header_black {
+    height: 64px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header.header_black {
+    height: 56px;
+  }
+}

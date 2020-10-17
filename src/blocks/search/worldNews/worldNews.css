@@ -1,0 +1,11 @@
+@import url(./__title/worldNews__title.css);
+@import url(./__subtitle/worldNews__subtitle.css);
+@import url(./__form/worldNews__form.css);
+@import url(../../content/__worldNews/content__worldNews.css);
+
+.worldNews {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

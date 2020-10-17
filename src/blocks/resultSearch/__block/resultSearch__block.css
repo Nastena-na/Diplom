@@ -1,0 +1,22 @@
+@import url(./__title/resultSearch__title.css);
+@import url(./__link/resultSearch__link.css);
+
+.resultSearch__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 1439px) {
+  .resultSearch__block {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .resultSearch__block {
+    flex-direction: column;
+    margin-bottom: 37px;
+  }
+}

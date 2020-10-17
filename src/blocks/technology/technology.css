@@ -1,0 +1,21 @@
+@import url(./__title/technology__title.css);
+@import url(./__container/technology__container.css);
+@import url(../../blocks/content/__technology/content__technology.css);
+
+.technology {
+  display: flex;
+  justify-content: space-between;
+  background: #f5f6f7;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .technology {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .technology {
+    flex-direction: column;
+  }
+}

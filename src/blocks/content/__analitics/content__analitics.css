@@ -1,0 +1,15 @@
+.content__analitics {
+  padding: 80px 104px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .content__analitics {
+    padding: 40px 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__analitics {
+    padding: 24px 16px 20px;
+  }
+}

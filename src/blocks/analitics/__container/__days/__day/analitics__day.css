@@ -1,0 +1,20 @@
+.analitics__day {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  width: 104px;
+  color: #1a1b22;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .analitics__day {
+    width: 120px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__day {
+    width: 80px;
+  }
+}

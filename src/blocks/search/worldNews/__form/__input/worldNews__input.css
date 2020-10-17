@@ -1,0 +1,33 @@
+.worldNews__input {
+  width: 100%;
+  min-height: 64px;
+  background: #ffffff;
+  border: 1px solid #d1d2d6;
+  padding-left: 24px;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  border-radius: 100px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  z-index: 1;
+}
+
+.worldNews__input::placeholder {
+  color: #b6bcbf;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .worldNews__input {
+    min-height: 56px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .worldNews__input {
+    min-height: 56px;
+  }
+}

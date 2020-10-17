@@ -1,0 +1,12 @@
+@import url(./__title/analitics__title.css);
+@import url(./__block/analitics__block.css);
+@import url(./__numbers/analitics__numbers.css);
+@import url(./__container/analitics__container.css);
+@import url(../../blocks/content/__analitics/content__analitics.css);
+
+.analitics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f5f6f7;
+}

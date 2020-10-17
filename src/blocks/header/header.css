@@ -1,0 +1,24 @@
+@import url(./__newsAnalyzer/header__newsAnalyzer.css);
+@import url(./__pages/header__pages.css);
+@import url(./_black/header_black.css);
+@import url(../content/__header/content__header.css);
+
+.header {
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    height: 64px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    height: 56px;
+  }
+}

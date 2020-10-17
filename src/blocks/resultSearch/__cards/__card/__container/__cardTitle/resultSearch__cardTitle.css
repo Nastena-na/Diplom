@@ -1,0 +1,29 @@
+.resultSearch__cardTitle {
+  min-height: 90px;
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+  margin: 0;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .resultSearch__cardTitle {
+    min-height: 72px;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .resultSearch__cardTitle {
+    min-height: 52px;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+}

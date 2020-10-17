@@ -1,0 +1,21 @@
+@import url(./__title/author__title.css);
+@import url(./__description/author__description.css);
+
+.author__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .author__container {
+    margin-top: -17px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .author__container {
+    margin-top: 0;
+  }
+}

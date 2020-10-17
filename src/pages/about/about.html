@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Гусева Анастасия" />
+    <meta
+      name="description"
+      content="Страница содержит информацию о проекте и авторе"
+    />
+    <meta name="keywords" content="HTML5, CSS, JS" />
+    <title>About</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="<%=require('../../images/Favicon.png').default%>"
+    />
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.about.css%>"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header class="header content__header header_black">
+        <a
+          class="header__newsAnalyzer header__newsAnalyzer_black"
+          href="./analytics.html"
+          lang="en"
+          target="blank"
+          >NewsAnalyzer</a
+        >
+        <div class="header__pages">
+          <a
+            class="header__page header__page_black"
+            href="./index.html"
+            target="blank"
+            >Главная</a
+          >
+          <a
+            class="header__page header__page_black header__page_active-about"
+            href="./about.html"
+            target="blank"
+            >О проекте</a
+          >
+        </div>
+      </header>
+
+      <section class="clients content__clients">
+        <h2 class="clients__title">Клиентам</h2>
+        <div class="clients__description">
+          <p class="clients__item">
+            Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель —
+            показать, чему научился студент, какими технологиями владеет.
+          </p>
+          <p class="clients__item">
+            Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
+            масштабируемым. Кроме того, добавлять новые страницы и
+            функциональность проще и быстрее, чем в проектах, выполненных по
+            другим методологиям. Также сайт проще и дешевле поддерживать.
+          </p>
+          <p class="clients__item">
+            Карточки с новостями приходят с сервера и обрабатываются асинхронно.
+            То есть сайт продолжает работать, пока от сервера приходит ответ.
+            Это повышает удобство использования сервиса.
+          </p>
+          <p class="clients__item">
+            При создании проекта была использована сборка технологией Webpack.
+            Это современный подход к разработке сайтов. Код оптимизируется, а
+            значит, сайт работает быстрее. Также сайт работает в старых
+            браузерах. Даже если посетители — пользователи старых операционных
+            систем, у них не будет проблем с отображением. А значит,
+            потенциальная аудитория возрастает.
+          </p>
+          <p class="clients__item">
+            Проект был проверен экспертами Яндекс.Практикума. Если вашему
+            бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.
+          </p>
+        </div>
+      </section>
+
+      <section class="technology content__technology">
+        <h3 class="technology__title">Используемые технологии</h3>
+        <div class="technology__container">
+          <div class="technology__item">
+            <h4 class="technology__tech">HTML</h4>
+            <img
+              class="technology__image"
+              src="<%=require('../../images/html.svg').default%>"
+              alt="HTML"
+            />
+          </div>
+
+          <div class="technology__item">
+            <h4 class="technology__tech">CSS</h4>
+            <img
+              class="technology__image"
+              src="<%=require('../../images/css.svg').default%>"
+              alt="CSS"
+            />
+          </div>
+
+          <div class="technology__item">
+            <h4 class="technology__tech">Java Script</h4>
+            <img
+              class="technology__image"
+              src="<%=require('../../images/js.svg').default%>"
+              alt="Java Script"
+            />
+          </div>
+
+          <div class="technology__item">
+            <h4 class="technology__tech">Webpack</h4>
+            <img
+              class="technology__image"
+              src="<%=require('../../images/webpack.svg').default%>"
+              alt="Webpack"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="author content__author">
+        <img
+          class="author__image"
+          src="<%=require('../../images/me.jpg').default%>"
+          alt="Об авторе"
+        />
+        <div class="author__container">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__description">
+            Это блок с описанием автора проекта. Здесь следует указать, как вас
+            зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+          </p>
+          <p class="author__description">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам. <br />Если
+            хотите, оставьте свои контакты: email и телефон. Так заказчики
+            смогут с вами связаться.
+          </p>
+        </div>
+      </section>
+
+      <section class="commits content__commits">
+        <div class="commits__block">
+          <h3 class="commits__title">История коммитов из GitHub</h3>
+          <a class="commits__link" href="https://github.com/" target="blank"
+            >Открыть в Github &gt;</a
+          >
+        </div>
+        <div class="commits__cards">
+          <a href="#" class="commits__card">
+            <time class="commits__time" datetime="2019-08-14"
+              >14 августа, 2019</time
+            >
+            <div class="commits__group">
+              <img
+                class="commits__avatar"
+                src="<%=require('../../images/avatar.jpg').default%>"
+                alt="аватар"
+              />
+              <div class="commits__information">
+                <p class="commits__name">Мария Фёдорова</p>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
+            </div>
+            <p class="commits__commit" lang="en">
+              You can install this plugin directly from NetBeans Plugin Portal:
+              in NetBeans, open Tools > Plugins > Available plugins and find and
+              install Emmet plugin.
+            </p>
+          </a>
+
+          <a href="#" class="commits__card">
+            <time class="commits__time" datetime="2019-08-14"
+              >14 августа, 2019</time
+            >
+            <div class="commits__group">
+              <img
+                class="commits__avatar"
+                src="<%=require('../../images/avatar.jpg').default%>"
+                alt="аватар"
+              />
+              <div class="commits__information">
+                <p class="commits__name">Мария Фёдорова</p>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
+            </div>
+            <p class="commits__commit" lang="en">
+              You can install this plugin directly from NetBeans Plugin Portal:
+              in NetBeans, open Tools > Plugins > Available plugins and find and
+              install Emmet plugin.
+            </p>
+          </a>
+
+          <a href="#" class="commits__card">
+            <time class="commits__time" datetime="2019-08-14"
+              >14 августа, 2019</time
+            >
+            <div class="commits__group">
+              <img
+                class="commits__avatar"
+                src="<%=require('../../images/avatar.jpg').default%>"
+                alt="аватар"
+              />
+              <div class="commits__information">
+                <p class="commits__name">Мария Фёдорова</p>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
+            </div>
+            <p class="commits__commit" lang="en">
+              You can install this plugin directly from NetBeans Plugin Portal:
+              in NetBeans, open Tools > Plugins > Available plugins and find and
+              install Emmet plugin.
+            </p>
+          </a>
+
+          <a href="#" class="commits__card">
+            <time class="commits__time" datetime="2019-08-14"
+              >14 августа, 2019</time
+            >
+            <div class="commits__group">
+              <img
+                class="commits__avatar"
+                src="<%=require('../../images/avatar.jpg').default%>"
+                alt="аватар"
+              />
+              <div class="commits__information">
+                <p class="commits__name">Мария Фёдорова</p>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
+            </div>
+            <p class="commits__commit" lang="en">
+              You can install this plugin directly from NetBeans Plugin Portal:
+              in NetBeans, open Tools > Plugins > Available plugins and find and
+              install Emmet plugin.
+            </p>
+          </a>
+
+          <a href="#" class="commits__card">
+            <time class="commits__time" datetime="2019-08-14"
+              >14 августа, 2019</time
+            >
+            <div class="commits__group">
+              <img
+                class="commits__avatar"
+                src="<%=require('../../images/avatar.jpg').default%>"
+                alt="аватар"
+              />
+              <div class="commits__information">
+                <p class="commits__name">Мария Фёдорова</p>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
+            </div>
+            <p class="commits__commit" lang="en">
+              You can install this plugin directly from NetBeans Plugin Portal:
+              in NetBeans, open Tools > Plugins > Available plugins and find and
+              install Emmet plugin.
+            </p>
+          </a>
+        </div>
+
+        <div class="commits__points">
+          <img
+            class="commits__point"
+            src="<%=require('../../images/point.svg').default%>"
+            alt="точка"
+          />
+          <img
+            class="commits__point-black"
+            src="<%=require('../../images/point-black.svg').default%>"
+            alt="чёрная точка"
+          />
+          <img
+            class="commits__point"
+            src="<%=require('../../images/point.svg').default%>"
+            alt="точка"
+          />
+          <img
+            class="commits__point"
+            src="<%=require('../../images/point.svg').default%>"
+            alt="точка"
+          />
+          <img
+            class="commits__point"
+            src="<%=require('../../images/point.svg').default%>"
+            alt="точка"
+          />
+        </div>
+
+        <button class="commits__button">Открыть в GitHub</button>
+
+        <img
+          class="commits__arrow-left"
+          src="<%=require('../../images/arrow-left.svg').default%>"
+          alt="левая стрелка"
+        />
+        <img
+          class="commits__arrow-right"
+          src="<%=require('../../images/arrow-right.svg').default%>"
+          alt="правая стрелка"
+        />
+      </section>
+
+      <footer class="footer content__footer footer_about">
+        <p class="footer__author">&#169; 2020 Гусева Анастасия</p>
+        <ul class="footer__nav">
+          <li class="footer__page">
+            <a class="footer__link" href="./index.html" target="blank"
+              >Главная</a
+            >
+          </li>
+          <li class="footer__page">
+            <a class="footer__link" href="./about.html" target="blank"
+              >О проекте</a
+            >
+          </li>
+          <li class="footer__page">
+            <a
+              class="footer__link"
+              href="https://praktikum.yandex.ru/"
+              target="blank"
+              >Яндекс.Практикум</a
+            >
+          </li>
+        </ul>
+        <div class="footer__icons">
+          <a class="footer__iconLink" href="https://github.com/" target="blank">
+            <img
+              class="footer__icon"
+              src="<%=require('../../images/icon1.svg').default%>"
+              alt="githab"
+            />
+          </a>
+          <a
+            class="footer__iconLink"
+            href="https://www.facebook.com/"
+            target="blank"
+          >
+            <img
+              class="footer__icon"
+              src="<%=require('../../images/icon2.svg').default%>"
+              alt="facebook"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="<%=htmlWebpackPlugin.files.chunks.about.entry%>"
+    ></script>
+  </body>
+</html>

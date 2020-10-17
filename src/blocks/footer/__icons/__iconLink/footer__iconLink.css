@@ -1,0 +1,7 @@
+.footer__iconLink {
+  transition: opacity 0.1s linear;
+}
+
+.footer__iconLink:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,21 @@
+.commits__button {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .commits__button {
+    display: block;
+    width: 288px;
+    height: 56px;
+    margin-top: 24px;
+    border: 1px solid #1a1b22;
+    border-radius: 80px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1a1b22;
+  }
+}

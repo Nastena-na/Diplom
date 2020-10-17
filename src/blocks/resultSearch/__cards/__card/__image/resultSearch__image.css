@@ -1,0 +1,18 @@
+.resultSearch__image {
+  max-width: 100%;
+  min-height: 272px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .resultSearch__image {
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .resultSearch__image {
+    min-height: 196px;
+  }
+}

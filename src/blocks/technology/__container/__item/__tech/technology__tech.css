@@ -1,0 +1,14 @@
+.technology__tech {
+  height: 24px;
+  width: 120px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1a1b22;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}

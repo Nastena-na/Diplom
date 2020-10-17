@@ -1,0 +1,15 @@
+@import url(./__page/survey__page.css);
+
+.survey__pages {
+  height: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .survey__pages {
+    display: none;
+  }
+}

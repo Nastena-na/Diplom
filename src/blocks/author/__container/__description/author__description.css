@@ -1,0 +1,26 @@
+.author__description {
+  max-width: 600px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  margin: 0;
+}
+
+.author__description:first-of-type {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .author__description:first-of-type {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .author__description:first-of-type {
+    margin-top: 16px;
+  }
+}

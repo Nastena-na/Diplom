@@ -1,0 +1,11 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__search/preloader__search.css);
+
+.preloader {
+  max-width: 100%;
+  min-height: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f6f7;
+}

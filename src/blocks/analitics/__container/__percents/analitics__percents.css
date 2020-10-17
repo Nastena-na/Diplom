@@ -1,0 +1,18 @@
+@import url(./__percent/analitics__persent.css);
+
+.analitics__percents {
+  max-width: 1128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__percents {
+    max-width: 1128px;
+    margin-top: 20px;
+  }
+}

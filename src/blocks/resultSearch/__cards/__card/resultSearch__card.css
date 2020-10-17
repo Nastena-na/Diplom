@@ -1,0 +1,23 @@
+@import url(./__image/resultSearch__image.css);
+@import url(./__container/resultSearch__container.css);
+
+.resultSearch__card {
+  max-width: 100%;
+  height: 576px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .resultSearch__card {
+    height: 430px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .resultSearch__card {
+    height: 446px;
+  }
+}

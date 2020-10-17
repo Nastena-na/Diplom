@@ -1,0 +1,7 @@
+@import url(./__days/analitics__days.css);
+@import url(./__percents/analitics__percents.css);
+
+.analitics__container {
+  display: flex;
+  margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+.analitics__num {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 4px;
+  margin-left: 4px;
+}
