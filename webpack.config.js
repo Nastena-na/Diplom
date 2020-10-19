@@ -29,7 +29,14 @@ module.exports = {
       {
         test: /\.css$/, // применять это правило только к CSS-файлам
         use: [
-          isDev ? 'style-loader' : MiniCssExtractPlugin.loader, // если вы собираете в режиме dev, то плагин MiniCssExtractPlugin загружать не нужно.
+          isDev
+            ? 'style-loader'
+            : {
+                loader: MiniCssExtractPlugin.loader, // если вы собираете в режиме dev, то плагин MiniCssExtractPlugin загружать не нужно.
+                options: {
+                  publicPath: '../',
+                },
+              },
           {
             loader: 'css-loader',
             options: {

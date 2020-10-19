@@ -1,18 +1,18 @@
 .content__header {
-  padding-left: 104px;
-  padding-right: 101px;
+  padding-left: 7.22%;
+  padding-right: 7%;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .content__header {
-    padding-left: 40px;
-    padding-right: 42px;
+    padding-left: 5.2%;
+    padding-right: 5.46%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .content__header {
-    padding-left: 16px;
-    padding-right: 14px;
+    padding-left: 5%;
+    padding-right: 4.37%;
   }
 }

@@ -1,7 +1,6 @@
 @import url(./__card/resultSearch__card.css);
 
 .resultSearch__cards {
-  width: 100%;
   display: grid;
   grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr) minmax(
       400px,

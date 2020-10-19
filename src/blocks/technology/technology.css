@@ -3,6 +3,7 @@
 @import url(../../blocks/content/__technology/content__technology.css);
 
 .technology {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   background: #f5f6f7;

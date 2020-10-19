@@ -3,11 +3,10 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 24px;
   color: #1a1b22;
   text-decoration: none;
   transition: opacity 0.1s linear;
-  margin-top: 33px;
+  margin-top: 23px;
 }
 
 .header__newsAnalyzer.header__newsAnalyzer_black:hover {
