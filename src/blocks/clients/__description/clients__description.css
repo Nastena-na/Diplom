@@ -1,0 +1,21 @@
+@import url(./__item/clients__item.css);
+
+.clients__description {
+  min-height: 458px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .clients__description {
+    min-height: 510px;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .clients__description {
+    min-height: 1038px;
+  }
+}

@@ -1,0 +1,16 @@
+@import url(./__number/analitics__number.css);
+@import url(./_bottom/analitics__numbers_bottom.css);
+
+.analitics__numbers {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 16px 0 0 104px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__numbers {
+    display: none;
+  }
+}

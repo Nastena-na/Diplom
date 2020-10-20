@@ -1,0 +1,9 @@
+@import url(./__name/commits__name.css);
+@import url(./__email/commits__email.css);
+
+.commits__information {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+}

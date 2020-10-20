@@ -1,0 +1,22 @@
+.header__page.header__page_active {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 25px;
+  transition: opacity 0.1s linear;
+}
+
+.header__page.header__page_active:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header__page_active {
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__page_active {
+    padding-bottom: 13px;
+  }
+}

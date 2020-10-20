@@ -1,0 +1,15 @@
+.content__author {
+  padding: 5.55% 15% 5.55% 7.22%;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .content__author {
+    padding: 7.16% 5.2% 6.25% 5.2%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__author {
+    padding: 10% 5%;
+  }
+}

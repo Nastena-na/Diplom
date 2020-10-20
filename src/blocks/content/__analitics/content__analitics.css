@@ -1,0 +1,15 @@
+.content__analitics {
+  padding: 5.55% 7.22%;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .content__analitics {
+    padding: 5.2% 5.2%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__analitics {
+    padding: 7.5% 5% 6.25%;
+  }
+}

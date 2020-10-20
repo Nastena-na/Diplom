@@ -1,0 +1,26 @@
+@import url(./__item/technology__item.css);
+
+.technology__container {
+  margin-top: 93px;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .technology__container {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .technology__container {
+    margin-top: 39px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 33px;
+  }
+}

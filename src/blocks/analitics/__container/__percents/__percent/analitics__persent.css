@@ -1,0 +1,27 @@
+@import url(./_one/analitics__percent_one.css);
+@import url(./_two/analitics__percent_two.css);
+@import url(./_three/analitics__percent_three.css);
+@import url(./_four/analitics__percent_four.css);
+@import url(./_five/analitics__percent_five.css);
+@import url(./_six/analitics__percent_six.css);
+@import url(./_seven/analitics__percent_seven.css);
+@import url(./__num/analitics__num.css);
+
+.analitics__percent {
+  height: 24px;
+  background: #2f71e5;
+  margin-top: 56px;
+}
+
+.analitics__percent:first-of-type {
+  margin-top: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__percent {
+    margin-top: 24px;
+  }
+  .analitics__percent:first-of-type {
+    margin-top: 0;
+  }
+}

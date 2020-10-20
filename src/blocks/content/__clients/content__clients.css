@@ -1,0 +1,15 @@
+.content__clients {
+  padding: 2.77% 36.18% 6.52% 7.22%;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .content__clients {
+    padding: 3.9% 5.2% 3.38%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__clients {
+    padding: 5% 5% 14%;
+  }
+}

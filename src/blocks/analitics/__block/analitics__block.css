@@ -1,0 +1,16 @@
+@import url(./__date/analitics__date.css);
+@import url(./__reference/analitics__reference.css);
+
+.analitics__block {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: 38px;
+  border-bottom: 1px solid #1a1b22;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__block {
+    margin-top: 8px;
+  }
+}

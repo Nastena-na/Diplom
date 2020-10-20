@@ -1,0 +1,17 @@
+.commits__arrow-left {
+  top: 306px;
+  left: 24px;
+  position: absolute;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .commits__arrow-left {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .commits__arrow-left {
+    display: none;
+  }
+}

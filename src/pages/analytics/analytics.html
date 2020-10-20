@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Гусева Анастасия" />
+    <meta name="description" content="Страница содержит аналитику новостей" />
+    <meta name="keywords" content="HTML5, CSS, JS" />
+    <title>Analytics</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="<%=require('../../images/Favicon.png').default%>"
+    />
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.analytics.css%>"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header class="header content__header header_black">
+        <a
+          class="header__newsAnalyzer header__newsAnalyzer_black"
+          href="./analytics.html"
+          lang="en"
+          target="blank"
+          >NewsAnalyzer</a
+        >
+        <div class="header__pages">
+          <a
+            class="header__page header__page_black"
+            href="./index.html"
+            target="blank"
+            >Главная</a
+          >
+          <a
+            class="header__page header__page_black"
+            href="./about.html"
+            target="blank"
+            >О проекте</a
+          >
+        </div>
+      </header>
+
+      <section class="survey content__survey">
+        <div class="survey__pages">
+          <a
+            class="survey__page survey__page_black"
+            href="./index.html"
+            target="blank"
+            >Главная</a
+          >
+          <p class="survey__page">&frasl; Аналитика</p>
+        </div>
+        <div class="survey__block">
+          <h1 class="survey__title">Вы спросили: «Путешествия»</h1>
+          <p class="survey__paragraph">Новостей за неделю: 34 324</p>
+          <p class="survey__paragraph">Упоминаний в загаловках: 235</p>
+        </div>
+      </section>
+
+      <section class="analitics content__analitics">
+        <h2 class="analitics__title">Аналитика по дням</h2>
+        <div class="analitics__block">
+          <p class="analitics__date">Дата (август)</p>
+          <p class="analitics__reference">Кол-во упоминаний</p>
+        </div>
+        <ul class="analitics__numbers">
+          <li class="analitics__number">0</li>
+          <li class="analitics__number">25</li>
+          <li class="analitics__number">50</li>
+          <li class="analitics__number">75</li>
+          <li class="analitics__number">100</li>
+        </ul>
+        <div class="analitics__container">
+          <ul class="analitics__days">
+            <li class="analitics__day">19, пн</li>
+            <li class="analitics__day">20, вт</li>
+            <li class="analitics__day">21, ср</li>
+            <li class="analitics__day">22, чт</li>
+            <li class="analitics__day">23, пт</li>
+            <li class="analitics__day">24, сб</li>
+            <li class="analitics__day">25, вс</li>
+          </ul>
+          <ul class="analitics__percents">
+            <li class="analitics__percent analitics__percent_one">
+              <p class="analitics__num">15</p>
+            </li>
+            <li class="analitics__percent analitics__percent_two">
+              <p class="analitics__num">18</p>
+            </li>
+            <li class="analitics__percent analitics__percent_three">
+              <p class="analitics__num">11</p>
+            </li>
+            <li class="analitics__percent analitics__percent_four">
+              <p class="analitics__num">39</p>
+            </li>
+            <li class="analitics__percent analitics__percent_five">
+              <p class="analitics__num">45</p>
+            </li>
+            <li class="analitics__percent analitics__percent_six">
+              <p class="analitics__num">73</p>
+            </li>
+            <li class="analitics__percent analitics__percent_seven">
+              <p class="analitics__num">34</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="analitics__numbers analitics__numbers_bottom">
+          <li class="analitics__number">0</li>
+          <li class="analitics__number">25</li>
+          <li class="analitics__number">50</li>
+          <li class="analitics__number">75</li>
+          <li class="analitics__number">100</li>
+        </ul>
+      </section>
+
+      <footer class="footer content__footer footer_analitics">
+        <p class="footer__author">&#169; 2020 Гусева Анастасия</p>
+        <ul class="footer__nav">
+          <li class="footer__page">
+            <a class="footer__link" href="./index.html" target="blank"
+              >Главная</a
+            >
+          </li>
+          <li class="footer__page">
+            <a class="footer__link" href="./about.html" target="blank"
+              >О проекте</a
+            >
+          </li>
+          <li class="footer__page">
+            <a
+              class="footer__link"
+              href="https://praktikum.yandex.ru/"
+              target="blank"
+              >Яндекс.Практикум</a
+            >
+          </li>
+        </ul>
+        <div class="footer__icons">
+          <a class="footer__iconLink" href="https://github.com/" target="blank">
+            <img
+              class="footer__icon"
+              src="<%=require('../../images/icon1.svg').default%>"
+              alt="githab"
+            />
+          </a>
+          <a
+            class="footer__iconLink"
+            href="https://www.facebook.com/"
+            target="blank"
+          >
+            <img
+              class="footer__icon"
+              src="<%=require('../../images/icon2.svg').default%>"
+              alt="facebook"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="<%=htmlWebpackPlugin.files.chunks.analytics.entry%>"
+    ></script>
+  </body>
+</html>

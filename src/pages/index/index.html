@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Гусева Анастасия" />
+    <meta
+      name="description"
+      content="Страница содержит поисковую страницу новостей"
+    />
+    <meta name="keywords" content="HTML5, CSS, JS" />
+    <title>Index</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="<%=require('../../images/Favicon.png').default%>"
+    />
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.index.css%>"
+    />
+  </head>
+
+  <body>
+    <div class="content">
+      <section class="search">
+        <header class="header content__header">
+          <a
+            class="header__newsAnalyzer"
+            href="./analytics.html"
+            lang="en"
+            target="blank"
+            >NewsAnalyzer</a
+          >
+          <div class="header__pages">
+            <a
+              class="header__page header__page_active"
+              href="./index.html"
+              target="blank"
+              >Главная</a
+            >
+            <a class="header__page" href="./about.html" target="blank"
+              >О проекте</a
+            >
+          </div>
+        </header>
+
+        <div class="worldNews content__worldNews">
+          <h1 class="worldNews__title">Что в мире творится?</h1>
+          <h3 class="worldNews__subtitle">
+            Введите в поиске любую тему и узнайте, насколько популярной она была
+            в новостях за прошедшую неделю.
+          </h3>
+          <form class="worldNews__form" name="worldNews" novalidate>
+            <input
+              type="text"
+              id="news"
+              name="news"
+              class="worldNews__input"
+              required
+              placeholder="Введите тему новости"
+            />
+            <span id="news-error" class="worldNews__error"></span>
+            <button type="submit" class="worldNews__button" disabled>
+              Искать
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="preloader">
+        <i class="preloader__circle"></i>
+        <h4 class="preloader__search">Идет поиск новостей...</h4>
+      </section>
+
+      <section class="nothingFound">
+        <img
+          class="nothingFound__image"
+          src="<%=require('../../images/not-found.svg').default%>"
+          alt="ничего не найдено"
+        />
+        <h3 class="nothingFound__title">Ничего не найдено</h3>
+        <h4 class="nothingFound__subtitle">
+          К сожалению по вашему запросу ничего не найдено.
+        </h4>
+      </section>
+
+      <section class="resultSearch content__resultSearch">
+        <div class="resultSearch__block">
+          <h3 class="resultSearch__title">Результаты поиска</h3>
+          <a class="resultSearch__link" href="./analytics.html" target="blank"
+            >Посмотреть аналитику &gt;</a
+          >
+        </div>
+
+        <div class="resultSearch__cards">
+          <div class="resultSearch__card">
+            <img
+              class="resultSearch__image"
+              src="<%=require('../../images/лента.jpg').default%>"
+              alt="изображение результата поиска"
+            />
+            <div class="resultSearch__container">
+              <time class="resultSearch__cardData" datetime="2019-08-02"
+                >2 августа, 2019</time
+              >
+              <h4 class="resultSearch__cardTitle">
+                Национальное достояние – парки
+              </h4>
+              <p class="resultSearch__cardDescription">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складыв...
+              </p>
+              <a
+                class="resultSearch__cardLink"
+                href="https://lenta.ru/"
+                target="blank"
+                >Лента.ру</a
+              >
+            </div>
+          </div>
+
+          <div class="resultSearch__card">
+            <img
+              class="resultSearch__image"
+              src="<%=require('../../images/медуза.jpg').default%>"
+              alt="изображение результата поиска"
+            />
+            <div class="resultSearch__container">
+              <time class="resultSearch__cardData" datetime="2019-08-02"
+                >2 августа, 2019</time
+              >
+              <h4 class="resultSearch__cardTitle">
+                Национальное достояние – парки
+              </h4>
+              <p class="resultSearch__cardDescription">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складыв...
+              </p>
+              <a
+                class="resultSearch__cardLink"
+                href="https://meduza.io/"
+                target="blank"
+                >Медуза</a
+              >
+            </div>
+          </div>
+
+          <div class="resultSearch__card">
+            <img
+              class="resultSearch__image"
+              src="<%=require('../../images/РИА.jpg').default%>"
+              alt="изображение результата поиска"
+            />
+            <div class="resultSearch__container">
+              <time class="resultSearch__cardData" datetime="2019-08-02"
+                >2 августа, 2019</time
+              >
+              <h4 class="resultSearch__cardTitle">
+                Национальное достояние – парки
+              </h4>
+              <p class="resultSearch__cardDescription">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складыв...
+              </p>
+              <a
+                class="resultSearch__cardLink"
+                href="https://ria.ru/"
+                target="blank"
+                >Риа</a
+              >
+            </div>
+          </div>
+
+          <div class="resultSearch__card">
+            <img
+              class="resultSearch__image"
+              src="<%=require('../../images/дзен.jpg').default%>"
+              alt="изображение результата поиска"
+            />
+            <div class="resultSearch__container">
+              <time class="resultSearch__cardData" datetime="2019-08-02"
+                >2 августа, 2019</time
+              >
+              <h4 class="resultSearch__cardTitle">
+                Национальное достояние – парки
+              </h4>
+              <p class="resultSearch__cardDescription">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складыв...
+              </p>
+              <a
+                class="resultSearch__cardLink"
+                href="https://ria.ru/"
+                target="blank"
+                >Дзен</a
+              >
+            </div>
+          </div>
+
+          <div class="resultSearch__card">
+            <img
+              class="resultSearch__image"
+              src="<%=require('../../images/афиша.jpg').default%>"
+              alt="изображение результата поиска"
+            />
+            <div class="resultSearch__container">
+              <time class="resultSearch__cardData" datetime="2019-08-02"
+                >2 августа, 2019</time
+              >
+              <h4 class="resultSearch__cardTitle">
+                Национальное достояние – парки
+              </h4>
+              <p class="resultSearch__cardDescription">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складыв...
+              </p>
+              <a
+                class="resultSearch__cardLink"
+                href="https://ria.ru/"
+                target="blank"
+                >Афиша</a
+              >
+            </div>
+          </div>
+
+          <div class="resultSearch__card">
+            <img
+              class="resultSearch__image"
+              src="<%=require('../../images/медиазона.jpg').default%>"
+              alt="изображение результата поиска"
+            />
+            <div class="resultSearch__container">
+              <time class="resultSearch__cardData" datetime="2019-08-02"
+                >2 августа, 2019</time
+              >
+              <h4 class="resultSearch__cardTitle">
+                Национальное достояние – парки
+              </h4>
+              <p class="resultSearch__cardDescription">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складыв...
+              </p>
+              <a
+                class="resultSearch__cardLink"
+                href="https://ria.ru/"
+                target="blank"
+                >Медиазона</a
+              >
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="resultSearch__button">Показать еще</button>
+      </section>
+
+      <section class="author content__author">
+        <img
+          class="author__image"
+          src="<%=require('../../images/me.jpg').default%>"
+          alt="Об авторе"
+        />
+        <div class="author__container">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__description">
+            Это блок с описанием автора проекта. Здесь следует указать, как вас
+            зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+          </p>
+          <p class="author__description">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer content__footer">
+        <p class="footer__author">&#169; 2020 Гусева Анастасия</p>
+        <ul class="footer__nav">
+          <li class="footer__page">
+            <a class="footer__link" href="./index.html" target="blank"
+              >Главная</a
+            >
+          </li>
+          <li class="footer__page">
+            <a class="footer__link" href="./about.html" target="blank"
+              >О проекте</a
+            >
+          </li>
+          <li class="footer__page">
+            <a
+              class="footer__link"
+              href="https://praktikum.yandex.ru/"
+              target="blank"
+              >Яндекс.Практикум</a
+            >
+          </li>
+        </ul>
+        <div class="footer__icons">
+          <a class="footer__iconLink" href="https://github.com/" target="blank">
+            <img
+              class="footer__icon"
+              src="<%=require('../../images/icon1.svg').default%>"
+              alt="githab"
+            />
+          </a>
+          <a
+            class="footer__iconLink"
+            href="https://www.facebook.com/"
+            target="blank"
+          >
+            <img
+              class="footer__icon"
+              src="<%=require('../../images/icon2.svg').default%>"
+              alt="facebook"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="<%= htmlWebpackPlugin.files.chunks.index.entry%>"
+    ></script>
+  </body>
+</html>

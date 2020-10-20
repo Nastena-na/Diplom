@@ -1,0 +1,15 @@
+.analitics__percent.analitics__percent_six {
+  width: 816px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .analitics__percent.analitics__percent_six {
+    width: 414px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__percent.analitics__percent_six {
+    width: 151px;
+  }
+}

@@ -1,0 +1,25 @@
+@import url(./__input/worldNews__input.css);
+@import url(./__error/worldNews__error.css);
+@import url(./__button/worldNews__button.css);
+
+.worldNews__form {
+  width: 608px;
+  display: flex;
+  margin: 0;
+  margin-top: 64px;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .worldNews__form {
+    width: 448px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .worldNews__form {
+    width: 288px;
+    flex-direction: column;
+  }
+}

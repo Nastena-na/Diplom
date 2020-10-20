@@ -1,0 +1,17 @@
+.analitics__date {
+  max-width: 40px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  margin-right: 60px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analitics__date {
+    margin-right: 40px;
+  }
+}

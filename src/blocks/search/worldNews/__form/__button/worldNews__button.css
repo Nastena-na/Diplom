@@ -1,0 +1,44 @@
+.worldNews__button {
+  width: 168px;
+  min-height: 64px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #2f71e5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  margin-right: 0;
+  margin-left: -168px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+}
+
+.worldNews__button:hover {
+  background: #347eff;
+}
+
+.worldNews__button:active {
+  background: #2a65cc;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .worldNews__button {
+    width: 160px;
+    min-height: 56px;
+    margin-left: -158px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .worldNews__button {
+    width: 288px;
+    min-height: 56px;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+}

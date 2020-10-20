@@ -1,0 +1,23 @@
+@import url(./_black/header__newsAnalyzer_black.css);
+
+.header__newsAnalyzer {
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.1s linear;
+  margin-top: 23px;
+}
+
+.header__newsAnalyzer:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__newsAnalyzer {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+}

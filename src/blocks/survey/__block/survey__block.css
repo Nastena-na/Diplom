@@ -1,0 +1,20 @@
+@import url(./__title/survey__title.css);
+@import url(./__paragraph/survey__paragraph.css);
+
+.survey__block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .survey__block {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .survey__block {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,25 @@
+@import url(./worldNews/worldNews.css);
+
+.search {
+  height: 576px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../images/telephone.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .search {
+    height: 400px;
+    background-image: url('../../images/telephone768.jpg');
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search {
+    height: 536px;
+    background-image: url('../../images/telephone320.jpg');
+  }
+}

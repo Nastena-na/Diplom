@@ -1,0 +1,21 @@
+@import url(./__link/footer__link.css);
+
+.footer__page {
+  list-style-type: none;
+  margin-right: 40px;
+  transition: opacity 0.1s linear;
+}
+
+.footer__page:last-of-type {
+  margin-right: 0;
+}
+
+.footer__page:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .footer__page {
+    margin-right: 25px;
+  }
+}

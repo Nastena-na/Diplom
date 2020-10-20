@@ -1,0 +1,15 @@
+.footer_about {
+  padding: 0.9% 5.55% 1.73% 7.22%;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .footer.footer_about {
+    padding: 0.91% 2% 0 4.94%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer.footer_about {
+    padding: 6.25% 5.62% 6.87% 5%;
+  }
+}

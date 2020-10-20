@@ -1,0 +1,8 @@
+@import url(./__title/clients__title.css);
+@import url(./__description/clients__description.css);
+@import url(../../blocks/content/__clients/content__clients.css);
+
+.clients {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+.content__commits {
+  padding: 5% 0 5.55%;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .content__commits {
+    padding: 4.55% 0 5.2% 5.2%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__commits {
+    padding: 10% 5%;
+  }
+}

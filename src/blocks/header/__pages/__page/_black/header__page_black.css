@@ -1,0 +1,25 @@
+.header__page.header__page_black {
+  color: #b6bcbf;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__page.header__page_black:first-of-type {
+  margin-right: 34px;
+}
+
+.header__page.header__page_black:hover {
+  color: #1a1b22;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__page.header__page_black {
+    font-size: 16px;
+  }
+  .header__page.header__page_black:first-of-type {
+    margin-right: 11px;
+  }
+}

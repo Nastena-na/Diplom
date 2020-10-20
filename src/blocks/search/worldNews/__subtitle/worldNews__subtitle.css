@@ -1,0 +1,23 @@
+.worldNews__subtitle {
+  max-width: 545px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .worldNews__subtitle {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .worldNews__subtitle {
+    font-size: 20px;
+  }
+}

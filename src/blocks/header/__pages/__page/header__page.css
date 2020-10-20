@@ -1,0 +1,38 @@
+@import url(./_active/header__page_active.css);
+@import url(./_active-about/header__page_active-about.css);
+@import url(./_black/header__page_black.css);
+
+.header__page {
+  color: #b6bcbf;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__page:first-of-type {
+  margin-right: 34px;
+}
+
+.header__page:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header__page {
+    padding-bottom: 15px;
+  }
+  .header__page:first-of-type {
+    margin-right: 34px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__page {
+    font-size: 16px;
+  }
+  .header__page:first-of-type {
+    margin-right: 11px;
+  }
+}

@@ -1,0 +1,39 @@
+@import url(./__time/commits__time.css);
+@import url(./__group/commits__group.css);
+@import url(./__commit/commits__commit.css);
+
+.commits__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 24px 24px 64px;
+  text-decoration: none;
+  transition: opacity 0.1s linear;
+}
+
+.commits__card:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .commits__card {
+    padding: 24px 24px 25px;
+  }
+  .commits__card:nth-of-type(4n) {
+    display: none;
+  }
+  .commits__card:nth-of-type(5n) {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .commits__card {
+    display: none;
+  }
+  .commits__card:first-of-type {
+    display: flex;
+    padding: 16px 16px 45px;
+  }
+}
