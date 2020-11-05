@@ -60,6 +60,8 @@
               class="worldNews__input"
               required
               placeholder="Введите тему новости"
+              minlength="2"
+              maxlength="30"
             />
             <span id="news-error" class="worldNews__error"></span>
             <button type="submit" class="worldNews__button" disabled>
@@ -94,164 +96,8 @@
           >
         </div>
 
-        <div class="resultSearch__cards">
-          <div class="resultSearch__card">
-            <img
-              class="resultSearch__image"
-              src="<%=require('../../images/лента.jpg').default%>"
-              alt="изображение результата поиска"
-            />
-            <div class="resultSearch__container">
-              <time class="resultSearch__cardData" datetime="2019-08-02"
-                >2 августа, 2019</time
-              >
-              <h4 class="resultSearch__cardTitle">
-                Национальное достояние – парки
-              </h4>
-              <p class="resultSearch__cardDescription">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складыв...
-              </p>
-              <a
-                class="resultSearch__cardLink"
-                href="https://lenta.ru/"
-                target="blank"
-                >Лента.ру</a
-              >
-            </div>
-          </div>
-
-          <div class="resultSearch__card">
-            <img
-              class="resultSearch__image"
-              src="<%=require('../../images/медуза.jpg').default%>"
-              alt="изображение результата поиска"
-            />
-            <div class="resultSearch__container">
-              <time class="resultSearch__cardData" datetime="2019-08-02"
-                >2 августа, 2019</time
-              >
-              <h4 class="resultSearch__cardTitle">
-                Национальное достояние – парки
-              </h4>
-              <p class="resultSearch__cardDescription">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складыв...
-              </p>
-              <a
-                class="resultSearch__cardLink"
-                href="https://meduza.io/"
-                target="blank"
-                >Медуза</a
-              >
-            </div>
-          </div>
-
-          <div class="resultSearch__card">
-            <img
-              class="resultSearch__image"
-              src="<%=require('../../images/РИА.jpg').default%>"
-              alt="изображение результата поиска"
-            />
-            <div class="resultSearch__container">
-              <time class="resultSearch__cardData" datetime="2019-08-02"
-                >2 августа, 2019</time
-              >
-              <h4 class="resultSearch__cardTitle">
-                Национальное достояние – парки
-              </h4>
-              <p class="resultSearch__cardDescription">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складыв...
-              </p>
-              <a
-                class="resultSearch__cardLink"
-                href="https://ria.ru/"
-                target="blank"
-                >Риа</a
-              >
-            </div>
-          </div>
-
-          <div class="resultSearch__card">
-            <img
-              class="resultSearch__image"
-              src="<%=require('../../images/дзен.jpg').default%>"
-              alt="изображение результата поиска"
-            />
-            <div class="resultSearch__container">
-              <time class="resultSearch__cardData" datetime="2019-08-02"
-                >2 августа, 2019</time
-              >
-              <h4 class="resultSearch__cardTitle">
-                Национальное достояние – парки
-              </h4>
-              <p class="resultSearch__cardDescription">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складыв...
-              </p>
-              <a
-                class="resultSearch__cardLink"
-                href="https://ria.ru/"
-                target="blank"
-                >Дзен</a
-              >
-            </div>
-          </div>
-
-          <div class="resultSearch__card">
-            <img
-              class="resultSearch__image"
-              src="<%=require('../../images/афиша.jpg').default%>"
-              alt="изображение результата поиска"
-            />
-            <div class="resultSearch__container">
-              <time class="resultSearch__cardData" datetime="2019-08-02"
-                >2 августа, 2019</time
-              >
-              <h4 class="resultSearch__cardTitle">
-                Национальное достояние – парки
-              </h4>
-              <p class="resultSearch__cardDescription">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складыв...
-              </p>
-              <a
-                class="resultSearch__cardLink"
-                href="https://ria.ru/"
-                target="blank"
-                >Афиша</a
-              >
-            </div>
-          </div>
-
-          <div class="resultSearch__card">
-            <img
-              class="resultSearch__image"
-              src="<%=require('../../images/медиазона.jpg').default%>"
-              alt="изображение результата поиска"
-            />
-            <div class="resultSearch__container">
-              <time class="resultSearch__cardData" datetime="2019-08-02"
-                >2 августа, 2019</time
-              >
-              <h4 class="resultSearch__cardTitle">
-                Национальное достояние – парки
-              </h4>
-              <p class="resultSearch__cardDescription">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складыв...
-              </p>
-              <a
-                class="resultSearch__cardLink"
-                href="https://ria.ru/"
-                target="blank"
-                >Медиазона</a
-              >
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="resultSearch__button">Показать еще</button>
+        <div class="resultSearch__cards"></div>
+        <button class="resultSearch__button">Показать еще</button>
       </section>
 
       <section class="author content__author">

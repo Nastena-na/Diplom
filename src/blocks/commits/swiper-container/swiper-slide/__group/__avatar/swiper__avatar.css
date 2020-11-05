@@ -1,0 +1,22 @@
+.swiper__avatar {
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+  border-radius: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .swiper__avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .swiper__avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+  }
+}

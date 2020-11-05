@@ -6,6 +6,12 @@
   color: #1a1b22;
   text-decoration: none;
   margin-top: 12px;
+  transition: opacity 0.1s linear;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.commits__link:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

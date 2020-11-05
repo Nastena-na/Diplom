@@ -1,0 +1,15 @@
+.swiper__time {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #b6bcbf;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .swiper__time {
+    margin-bottom: 19px;
+  }
+}
