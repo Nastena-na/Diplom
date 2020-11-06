@@ -1,0 +1,37 @@
+@import url(./__time/swiper__time.css);
+@import url(./__group/swiper__group.css);
+@import url(./__commit/swiper__commit.css);
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 24px 24px 64px;
+  text-decoration: none;
+  transition: opacity 0.1s linear;
+}
+
+.swiper-slide:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1440px) {
+  .swiper-slide {
+    width: 352px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .swiper-slide {
+    width: 264px !important;
+    padding: 24px 24px 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .swiper-slide {
+    width: 256px !important;
+    padding: 16px 16px 45px;
+  }
+}

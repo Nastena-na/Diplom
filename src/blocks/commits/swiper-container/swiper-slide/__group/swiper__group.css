@@ -1,0 +1,7 @@
+@import url(./__avatar/swiper__avatar.css);
+@import url(./__information/swiper__information.css);
+
+.swiper__group {
+  display: flex;
+  margin: 0;
+}

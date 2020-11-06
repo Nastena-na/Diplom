@@ -1,9 +1,6 @@
 @import url(./__block/commits__block.css);
-@import url(./__cards/commits__cards.css);
-@import url(./__points/commits__points.css);
+@import url(./swiper-container/swiper-container.css);
 @import url(./__button/commits__button.css);
-@import url(./__arrow-left/commits__arrow-left.css);
-@import url(./__arrow-right/commits__arrow-right.css);
 @import url(../../blocks/content/__commits/content__commits.css);
 
 .commits {
@@ -12,4 +9,5 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }

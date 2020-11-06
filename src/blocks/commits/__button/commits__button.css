@@ -2,6 +2,10 @@
   display: none;
 }
 
+.commits__button-link {
+  text-decoration: none;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .commits__button {
     display: block;
@@ -18,5 +22,12 @@
     text-align: center;
     color: #1a1b22;
     align-self: center;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .commits__button:active {
+    background-color: wheat;
   }
 }

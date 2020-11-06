@@ -1,7 +1,0 @@
-@import url(./__avatar/commits__avatar.css);
-@import url(./__information/commits__information.css);
-
-.commits__group {
-  display: flex;
-  margin: 0;
-}

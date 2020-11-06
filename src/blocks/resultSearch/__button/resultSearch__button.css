@@ -16,6 +16,11 @@
   align-self: center;
   transition: opacity 0.1s linear;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.resultSearch__button:active {
+  background-color: wheat;
 }
 
 .resultSearch__button:hover {

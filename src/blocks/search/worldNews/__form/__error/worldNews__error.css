@@ -1,2 +1,5 @@
+@import url(./_active/worldNews__error_active.css);
+
 .worldNews__error {
+  display: none;
 }

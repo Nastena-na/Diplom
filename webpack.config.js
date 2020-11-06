@@ -28,6 +28,7 @@ module.exports = {
 
       {
         test: /\.css$/, // применять это правило только к CSS-файлам
+        sideEffects: true,
         use: [
           isDev
             ? 'style-loader'

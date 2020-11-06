@@ -1,0 +1,9 @@
+@import url(./__name/swiper__name.css);
+@import url(./__email/swiper__email.css);
+
+.swiper__information {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+}

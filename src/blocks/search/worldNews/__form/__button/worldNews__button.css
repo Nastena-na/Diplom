@@ -1,3 +1,5 @@
+@import url(./_none/worldNews__button_none.css);
+
 .worldNews__button {
   width: 168px;
   min-height: 64px;
@@ -16,6 +18,7 @@
   z-index: 2;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .worldNews__button:hover {
