@@ -11,7 +11,7 @@
 Сайт адаптирован под разные разрешения: для устройств с шириной до 768px, шириной до 1440px и более. Прописаны медиазапросы, стили разложены по блокам, подключены шрифты.
 Проект собран Webpack-сборкой.
 
-текущая версия - 0.0.3
+текущая версия - 0.0.4
 
 ## [Ссылка на проектную работу](https://Nastena-na.github.io/Diplom/)
 
@@ -40,3 +40,5 @@ ES6, Babel, OOP, CSS3, HTML5, Webpack, OOP, BEM, LocalStorage, Swiper
 - Запустить в development режиме - `npm run dev`
 - Запустить сборку production-билда - `npm run build`
 - Разместить production-билд на github pages - `npm run deploy`
+
+Проект завершён.

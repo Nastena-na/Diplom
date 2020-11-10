@@ -9,7 +9,6 @@ import { buttonNews } from '../../pages/index/index';
 
 const resultSearch = document.querySelector('.resultSearch');
 const newsCards = document.querySelector('.resultSearch__cards');
-const input = document.querySelector('.worldNews__input');
 const nothingFound = document.querySelector('.nothingFound');
 const newsApi = new NewsApi(configNews);
 const createCard = (...args) => new NewsCard(...args);
@@ -17,6 +16,8 @@ const cardNews = new CardList(newsCards, createCard);
 const dataStorage = new DataStorage();
 let countMin = 0;
 const countMax = 3;
+const localWord = JSON.parse(localStorage.getItem('keyInputWord'));
+const localArticles = JSON.parse(localStorage.getItem('keyArticles'));
 
 export class SearchNews {
   clearNews() {
@@ -27,53 +28,64 @@ export class SearchNews {
     resultSearch.classList.remove('resultSearch_active'); // блок с результатами скрыт
     nothingFound.classList.remove('nothingFound_active'); // блок "ничего не найдено" скрыт
     buttonNews.setAttribute('style', 'display:none'); // кнопки нет
-    renderLoading(true); // запускаю спиннер
     localStorage.clear(); // очищаю localStorage
+    renderLoading(true); // запускаю спиннер
+    document
+      .querySelector('.worldNews__button')
+      .setAttribute('disabled', 'true'); // блокирую кнопку на время выполнения запроса по ключевому слову
   }
 
-  addNews() {
-    newsApi
-      .getNews(input.value)
-      .then((res) => {
-        const articles = Array.from(res.articles);
-        let counter = countMin + countMax;
-        dataStorage.setArticles(articles);
-        dataStorage.setInputWord(input.value);
-        if (!input.value) {
-          nothingFound.classList.add('nothingFound_active');
-          return;
-        }
+  _getCounter(arg) {
+    // смотрим сколько пришло статей
+    let counter = countMin + countMax;
 
-        if (res.articles.length === 0) {
-          // ответ от сервера не пришёл
-          nothingFound.classList.add('nothingFound_active');
-          resultSearch.classList.remove('resultSearch_active');
-        }
+    if (arg.length === 0) {
+      // результатов нет
+      nothingFound.classList.add('nothingFound_active');
+      resultSearch.classList.remove('resultSearch_active');
+    }
 
-        if (articles.length >= 1 && articles.length <= 3) {
-          // пришли 1,2 или 3 статьи
-          resultSearch.classList.add('resultSearch_active');
-          cardNews.render(articles);
-        }
+    if (arg.length >= 1 && arg.length <= 3) {
+      // пришли 1,2 или 3 статьи
+      resultSearch.classList.add('resultSearch_active');
+      cardNews.render(arg);
+    }
 
-        if (articles.length > 3) {
-          // пришло больше трёх статей
-          resultSearch.classList.add('resultSearch_active');
-          cardNews.render(articles.slice(countMin, counter));
-          buttonNews.removeAttribute('style', 'display:none');
-          countMin = counter;
-          if (counter >= articles.length) {
-            buttonNews.setAttribute('style', 'display:none');
-          }
-        }
-      })
-      .catch((err) => {
-        // обработка ошибок
-        console.log(err);
-        alert(ERROR_MESSAGE);
-      })
-      .finally(() => {
-        renderLoading(false);
-      });
+    if (arg.length > 3) {
+      // пришло больше трёх статей
+      resultSearch.classList.add('resultSearch_active');
+      cardNews.render(arg.slice(countMin, counter));
+      buttonNews.removeAttribute('style', 'display:none');
+      countMin = counter;
+      if (counter >= arg.length) {
+        buttonNews.setAttribute('style', 'display:none');
+      }
+    }
+  }
+
+  addNews(data) {
+    if (data === localWord) {
+      // если введённое слово = ключу из локального хранилища, то выводим уже имеющиеся в хранилище новости
+      buttonNews.setAttribute('style', 'display:none');
+      renderLoading(false);
+      this._getCounter(localArticles);
+    } // отправляем запрос к серверу
+    else
+      newsApi
+        .getNews(data)
+        .then((res) => {
+          const articles = Array.from(res.articles);
+          this._getCounter(articles);
+          dataStorage.setArticles(articles);
+          dataStorage.setInputWord(data);
+        })
+        .catch((err) => {
+          // обработка ошибок
+          console.log(err);
+          alert(ERROR_MESSAGE);
+        })
+        .finally(() => {
+          renderLoading(false);
+        });
   }
 }

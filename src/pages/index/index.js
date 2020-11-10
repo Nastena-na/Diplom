@@ -3,6 +3,7 @@ import { FormValidator } from '../../js/components/FormValidator';
 import { SearchNews } from '../../js/components/SearchNews';
 export const buttonNews = document.querySelector('.resultSearch__button');
 export const preloader = document.querySelector('.preloader');
+const input = document.querySelector('.worldNews__input');
 
 (function () {
   const formWorldNews = document.forms.worldNews;
@@ -10,15 +11,17 @@ export const preloader = document.querySelector('.preloader');
   const searchNews = new SearchNews();
 
   function searchFirstNews(evt) {
+    // отрисовка блока с новостями по запросу
     evt.preventDefault(); // отмена действия браузера по умолчанию
     searchNews.clearNews();
     searchNews.getStart();
-    searchNews.addNews();
+    searchNews.addNews(input.value);
   }
 
   function searchMoreNews(evt) {
+    // показать ещё новости
     evt.preventDefault(); // отмена действия браузера по умолчанию
-    searchNews.addNews();
+    searchNews.addNews(input.value);
   }
 
   worldNewsValidator.setEventListeners();

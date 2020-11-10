@@ -26,7 +26,6 @@ export class FormValidator {
     } else {
       error.classList.remove('worldNews__error_active');
       input.setCustomValidity('');
-      error.textContent = input.validationMessage;
       return true;
     }
   }
