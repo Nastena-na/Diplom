@@ -16,8 +16,8 @@ const cardNews = new CardList(newsCards, createCard);
 const dataStorage = new DataStorage();
 let countMin = 0;
 const countMax = 3;
-const localWord = JSON.parse(localStorage.getItem('keyInputWord'));
-const localArticles = JSON.parse(localStorage.getItem('keyArticles'));
+const localWord = dataStorage.getInputWord();
+const localArticles = dataStorage.getArticles();
 
 export class SearchNews {
   clearNews() {
