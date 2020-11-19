@@ -1,8 +1,10 @@
 import './analytics.css';
 import { START_DAY, DAYS_IN_WEEK } from '../../js/constants/constants';
+import { DataStorage } from '../../js/modules/DataStorage';
 
-const word = JSON.parse(localStorage.getItem('keyInputWord'));
-const allArticles = JSON.parse(localStorage.getItem('keyArticles'));
+const dataStorage = new DataStorage();
+const word = dataStorage.getInputWord();
+const allArticles = dataStorage.getArticles();
 
 class AnaliticsData {
   getNumbers() {

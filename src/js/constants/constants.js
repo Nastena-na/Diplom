@@ -8,7 +8,7 @@ export const START_DAY = new Date(new Date().getTime() - WEEK);
 
 const FROM_DATE = START_DAY.toISOString();
 
-export const DAYS_IN_WEEK = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+export const DAYS_IN_WEEK = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 
 const newsUrl =
   NODE_ENV === 'production' ? 'https://newsapi.org' : 'http://newsapi.org';

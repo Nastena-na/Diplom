@@ -1,8 +1,4 @@
 export class DataStorage {
-  constructor() {
-    this.getInputWord = this.getInputWord.bind(this);
-    this.getArticles = this.getArticles.bind(this);
-  }
   setInputWord(input) {
     localStorage.setItem('keyInputWord', JSON.stringify(input));
   }
@@ -10,9 +6,9 @@ export class DataStorage {
     localStorage.setItem('keyArticles', JSON.stringify(res));
   }
   getInputWord() {
-    JSON.parse(localStorage.getItem('keyInputWord'));
+    return JSON.parse(localStorage.getItem('keyInputWord'));
   }
   getArticles() {
-    JSON.parse(localStorage.getItem('keyArticles'));
+    return JSON.parse(localStorage.getItem('keyArticles'));
   }
 }
